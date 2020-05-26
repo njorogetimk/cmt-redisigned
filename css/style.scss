@@ -1,0 +1,131 @@
+---
+---
+
+body {
+  background-color: white;
+  font-size: 16px;
+}
+
+/* Globals CSS */
+
+/* dark link helper class */
+a.dark-link {
+  color: #0067b8;
+}
+i {
+  vertical-align: bottom;
+}
+
+p {
+  font-size: 1.2rem;
+
+  i {
+    vertical-align: text-bottom;
+  }
+}
+.btn {
+  text-transform: capitalize;
+  background: transparent;
+  border-radius: 5px;
+  color: inherit;
+  border: 1px solid black;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+/* Navbar */
+
+nav {
+  background-color: white;
+  font-size: 1rem;
+  color: black;
+  border-bottom: 3px solid black;
+
+  img:first-child {
+    border-radius: 50%;
+  }
+
+  ul a,
+  .material-icons {
+    color: black;
+  }
+
+  .active {
+    border-top: 2px solid var(--border-color);
+  }
+
+  a:hover {
+    border-top: 2px solid var(--border-color);
+  }
+}
+
+/* Sections */
+.section {
+  padding-top: 1rem;
+  display: inherit;
+  padding-bottom: 5px;
+
+  .container {
+    background-color: white;
+    border-radius: 7px;
+
+    hr {
+      color: transparent;
+    }
+  }
+}
+
+.title {
+  background-color: skyblue;
+}
+
+.content {
+  background-color: skyblue;
+}
+
+/* Sermons */
+.sort {
+  padding: 2rem 0 1rem 0;
+  background-color: #ededed;
+}
+
+/* Footer */
+.page-footer {
+  background-color: rgba(28, 28, 28, 1);
+  padding-top: 20px;
+
+  .collection li {
+    background-color: inherit;
+  }
+
+  a {
+    font-size: 1.1em;
+  }
+}
+
+// Homepage
+.welcome {
+  background: rgba(0, 0, 0, 0) url("{{site.baseurl}}/images/backg.jpg")
+    no-repeat scroll center center / cover;
+  text-align: center;
+  padding: 2em 0;
+
+  div {
+    background: rgba(15, 26, 25, 0.5) none repeat scroll 0% 0% !important;
+    padding: 1rem;
+    border-radius: 4rem !important;
+    color: white;
+
+    .btn {
+      background-color: skyblue;
+      color: black;
+      border-color: transparent;
+    }
+  }
+}

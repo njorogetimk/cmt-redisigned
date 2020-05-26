@@ -1,0 +1,33 @@
+---
+layout: sermons
+title: Sermons
+month: 0
+day: 12
+---
+
+<section class="section content">
+  <div class="container">
+    <h2>2020</h2>
+    <div class="row">
+      {% assign the_counter = 1%}
+      {% assign current_month = 'January'%}
+      {%- for article in site.pages -%}
+      {%- if article.year == '2020' and article.name != 'index.html'-%}
+      <div class="col s12 m6">
+        <a href="{{article.baseurl}}{{article.url}}" class="dark-link">{{article.heading | replace: "'", ""}}</a>
+
+        <p>
+          {{article.date | date: "%b %d %y"}}
+        </p>
+      </div>
+      <hr class="col s12 hide-on-med-and-up">
+      {% assign the_modulus = the_counter | modulo: 2%}
+      {%- if the_modulus == 0 -%}
+      <hr class="col s12 hide-on-small-and-down">
+      {%- endif-%}
+      {% assign the_counter = the_counter | plus: 1%}
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,30 @@
+---
+layout: teachings
+title: Teachings
+---
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+      {% assign counter = 1%}
+      {%- for article in site.pages reversed -%}
+      {%- if article.url contains "teachings/articles" -%}
+      <div class="col s12 m6">
+        <h5>{{article.heading}}</h5>
+        <div>
+          {{article.intro}}
+        </div>
+        <a href="{{site.baseurl}}{{article.url}}" class="btn">Read More</a>
+      </div>
+      {% assign the_modulus = counter | modulo: 2%}
+      {%- if the_modulus == 0 -%}
+      <hr class="col s12 hide-on-small-and-down">
+      {%- endif -%}
+
+      {% assign counter=counter | plus: 1%}
+
+      {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </div>
+</section>

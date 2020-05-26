@@ -1,0 +1,11 @@
+---
+layout: sermons
+---
+
+<section class="section">
+  <div class="container">
+    <h4 style="text-transform: capitalize;">{{page.heading | replace: "'", ""}}</h4>
+    <p>{{page.date | date: "%A, %b %d"}}</p>
+    {{content}}
+  </div>
+</section>

@@ -1,0 +1,33 @@
+defaults:
+  - scope:
+      path: "sermons"
+    values:
+      layout: "sermons"
+      node: "Sermons"
+
+  - scope:
+      path: "sermons/2020"
+    values:
+      year: "2020"
+
+  - scope:
+      path: "sermons/2020/Sunday"
+    values:
+      layout: "sermon"
+
+  - scope:
+      path: "sermons/2020/Thursday"
+    values:
+      layout: "sermon"
+
+  - scope:
+      path: "teachings/articles"
+    values:
+      layout: "teaching"
+      node: "Teachings"
+
+  - scope:
+      path: "music"
+    values:
+      layout: "music"
+      node: "Music"
