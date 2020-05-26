@@ -56,12 +56,8 @@ nav {
     color: black;
   }
 
-  .active {
-    border-top: 2px solid var(--border-color);
-  }
-
   a:hover {
-    border-top: 2px solid var(--border-color);
+    border-top: 3px solid skyblue;
   }
 }
 
