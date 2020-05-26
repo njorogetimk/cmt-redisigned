@@ -1,8 +1,11 @@
 ---
 ---
 
+$main-bg: white;
+$second-bg: skyblue;
+
 body {
-  background-color: white;
+  background-color: $main-bg;
   font-size: 16px;
 }
 
@@ -32,7 +35,7 @@ p {
 }
 
 .skyblue {
-  background-color: skyblue;
+  background-color: $second-bg;
 }
 
 iframe {
@@ -42,7 +45,7 @@ iframe {
 /* Navbar */
 
 nav {
-  background-color: white;
+  background-color: $main-bg;
   font-size: 1rem;
   color: black;
   border-bottom: 3px solid black;
@@ -57,7 +60,7 @@ nav {
   }
 
   a:hover {
-    border-top: 3px solid skyblue;
+    border-top: 3px solid $second-bg;
   }
 }
 
@@ -68,7 +71,7 @@ nav {
   padding-bottom: 5px;
 
   .container {
-    background-color: white;
+    background-color: $main-bg;
     border-radius: 7px;
 
     hr {
@@ -78,11 +81,11 @@ nav {
 }
 
 .title {
-  background-color: skyblue;
+  background-color: $second-bg;
 }
 
 .content {
-  background-color: skyblue;
+  background-color: $second-bg;
 }
 
 /* Sermons */
@@ -116,10 +119,10 @@ nav {
     background: rgba(15, 26, 25, 0.5) none repeat scroll 0% 0% !important;
     padding: 1rem;
     border-radius: 4rem !important;
-    color: white;
+    color: $main-bg;
 
     .btn {
-      background-color: skyblue;
+      background-color: $second-bg;
       color: black;
       border-color: transparent;
     }
