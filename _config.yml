@@ -11,12 +11,32 @@ defaults:
       year: "2020"
 
   - scope:
-      path: "sermons/2020/Sunday"
+      path: "sermons/2020/sunday"
     values:
       layout: "sermon"
 
   - scope:
-      path: "sermons/2020/Thursday"
+      path: "sermons/2020/thursday"
+    values:
+      layout: "sermon"
+
+  - scope:
+      path: "sermons/2019"
+    values:
+      year: "2019"
+
+  - scope:
+      path: "sermons/2019/sunday"
+    values:
+      layout: "sermon"
+
+  - scope:
+      path: "sermons/2019/thursday"
+    values:
+      layout: "sermon"
+
+  - scope:
+      path: "sermons/2018/thursday"
     values:
       layout: "sermon"
 

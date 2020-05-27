@@ -4,12 +4,12 @@ title: Sermons
 
 <section class="section content">
   <div class="container">
-    <h2 class="center">2020</h2>
+    <h2 class="center">2019</h2>
     <div class="row">
       {% assign the_counter = 1%}
       {% assign current_month = ' '%}
       {%- for article in site.pages -%}
-      {%- if article.year == '2020' and article.name != 'index.html'-%}
+      {%- if article.year == '2019' and article.name != 'index.html' and article.series != 'Vito'-%}
       {% assign art_month = article.date | date: "%B"%}
       {%- if art_month != current_month -%}
       <hr class="col s12">
