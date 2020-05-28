@@ -10,7 +10,7 @@ title: Vito Vya Bibilia
       {%- for article in site.pages -%}
       {%- if article.series == 'Vito'-%}
       <div class="col s12 l6">
-        <p> <a href="{{site.baseurl}}{{article.url}}" class="dark-link">{{article.heading}}</a> </p>
+        <p> <a href="{{site.baseurl}}/{{article.url}}" class="dark-link">{{article.heading}}</a> </p>
       </div>
 
       {% assign modulo_counter = counter | modulo: 2%}

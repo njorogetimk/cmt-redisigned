@@ -20,7 +20,7 @@ title: Sermons
       {% assign current_month = art_month%}
       {%- endif -%}
       <div class="col s12 m6">
-        <a href="{{article.baseurl}}{{article.url}}" class="dark-link">{{article.heading | replace: "'", ""}}</a>
+        <a href="{{site.baseurl}}/{{article.url}}" class="dark-link">{{article.heading | replace: "'", ""}}</a>
         <p>
           {{article.date | date: "%A %d"}}
         </p>
