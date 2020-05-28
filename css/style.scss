@@ -89,6 +89,12 @@ nav {
 }
 
 /* Sermons */
+.sermon {
+  @media only screen and (max-width: 600px) {
+    margin-bottom: 1.4rem;
+    line-height: 1;
+  }
+}
 .sort {
   padding: 2rem 0 1rem 0;
   background-color: #ededed;

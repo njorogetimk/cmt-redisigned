@@ -8,7 +8,7 @@ title: Sermons
     <div class="row">
       {% assign the_counter = 1%}
       {% assign current_month = ' '%}
-      {%- for article in site.pages -%}
+      {%- for article in site.pages reversed-%}
       {%- if article.year == '2020' and article.name != 'index.html'-%}
       {% assign art_month = article.date | date: "%B"%}
       {%- if art_month != current_month -%}
@@ -19,7 +19,7 @@ title: Sermons
       {% assign the_counter = 1%}
       {% assign current_month = art_month%}
       {%- endif -%}
-      <div class="col s12 m6">
+      <div class="col s12 m6 sermon">
         <a href="{{site.baseurl}}/{{article.url}}" class="dark-link">{{article.heading | replace: "'", ""}}</a>
         <p>
           {{article.date | date: "%A %d"}}
@@ -27,7 +27,7 @@ title: Sermons
       </div>
       {% assign the_modulus = the_counter | modulo: 2%}
       {%- if the_modulus == 0 -%}
-      <hr class="col s12 hide-on-small-and-down">
+      <hr class="col s12">
       {%- endif-%}
       {% assign the_counter = the_counter | plus: 1%}
       {%- endif -%}
