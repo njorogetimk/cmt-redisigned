@@ -64,6 +64,17 @@ nav {
   }
 }
 
+.sidenav {
+  text-align: center;
+  background: rgba($color: white, $alpha: 0.9);
+  img {
+    border-radius: 50%;
+  }
+  li a {
+    font-size: 1.7rem;
+  }
+}
+
 /* Sections */
 .section {
   padding-top: 1rem;
