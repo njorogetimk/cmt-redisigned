@@ -10,7 +10,6 @@ body {
 }
 
 /* Globals CSS */
-
 /* dark link helper class */
 .dark-link {
   color: #0067b8;
@@ -36,6 +35,10 @@ p {
 
 .skyblue {
   background-color: $second-bg;
+}
+
+.hidden {
+  display: none !important;
 }
 
 iframe {
