@@ -45,6 +45,9 @@ iframe {
   max-width: 100%;
 }
 
+.yt-icon {
+  height: 3.92rem;
+}
 /* Navbar */
 
 nav {
@@ -92,6 +95,15 @@ nav {
     hr {
       color: transparent;
     }
+  }
+}
+
+.livestream {
+  background-color: #df292d;
+  color: white;
+  .container {
+    background-color: #df292d;
+    color: white;
   }
 }
 
