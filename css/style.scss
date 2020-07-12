@@ -95,6 +95,22 @@ nav {
   }
 }
 
+.services {
+  background-color: #df292d;
+  color: white;
+  .container {
+    background-color: #df292d;
+    border: solid white 1px;
+
+    h3.title {
+      background-color: #df292d;
+      img {
+        vertical-align: bottom;
+      }
+    }
+  }
+}
+
 .title {
   background-color: $second-bg;
 }
