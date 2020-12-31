@@ -54,8 +54,14 @@ nav {
   border-bottom: 3px solid black;
 
   img:first-child {
+    /* Logo */
+    // border-radius: 50%;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
-    height: 112px;
+    @media only screen and (max-width: 600px) {
+      height: 112px;
+    }
   }
 
   ul a,
@@ -129,6 +135,12 @@ nav {
 .sort {
   padding: 2rem 0 1rem 0;
   background-color: #ededed;
+
+  .m3 {
+    @media only screen and (max-width: 600px) {
+      margin-top: 0.5rem;
+    }
+  }
 }
 
 /* Footer */

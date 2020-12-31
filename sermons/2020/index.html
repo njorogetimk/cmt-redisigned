@@ -8,7 +8,7 @@ title: Sermons
     <div class="row">
       {% assign the_counter = 1%}
       {% assign current_month = ' '%}
-      {%- for article in site.pages reversed-%}
+      {%- for article in site.pages-%}
       {%- if article.year == '2020' and article.name != 'index.html'-%}
       {% assign art_month = article.date | date: "%B"%}
       {%- if art_month != current_month -%}
