@@ -6,21 +6,21 @@ title: Vito Vya Bibilia
   <div class="container">
     <h4>Vito Vya Bibilia</h4>
     <div class="row">
-      {%- assign counter = 1-%}
-      {%- for article in site.pages -%}
-      {%- if article.series == 'Vito'-%}
+      {%- assign counter = 1-%} {%- for article in site.pages -%} {%- if
+      article.series == 'Vito'-%}
       <div class="col s12 l6">
-        <p> <a href="{{site.baseurl}}/{{article.url}}" class="dark-link">{{article.heading}}</a> </p>
+        <p>
+          <a href="{{site.baseurl}}{{article.url}}" class="dark-link"
+            >{{article.heading}}</a
+          >
+        </p>
       </div>
 
-      {% assign modulo_counter = counter | modulo: 2%}
-      {%- if modulo_counter == 0 -%}
-      <hr class="col s12 hide-on-med-and-down">
-      {%- endif -%}
-
-      {% assign counter = counter | plus: 1%}
-      {%- endif -%}
-      {%- endfor -%}
+      {% assign modulo_counter = counter | modulo: 2%} {%- if modulo_counter ==
+      0 -%}
+      <hr class="col s12 hide-on-med-and-down" />
+      {%- endif -%} {% assign counter = counter | plus: 1%} {%- endif -%} {%-
+      endfor -%}
     </div>
   </div>
 </section>
