@@ -27,7 +27,7 @@ title: Sermons
       </div>
       {% assign the_modulus = the_counter | modulo: 2%}
       {%- if the_modulus == 0 -%}
-      <hr class="col s12">
+      <hr class="col s12 hide-on-small-and-down">
       {%- endif-%}
       {% assign the_counter = the_counter | plus: 1%}
       {%- endif -%}
