@@ -17,10 +17,15 @@ defaults:
       year: "2021"
 
   - scope:
+      path: "sermons/2022"
+    values:
+      year: "2022"
+
+  - scope:
       path: "sermons/2020/sunday"
     values:
       layout: "sermon"
-  
+
   - scope:
       path: "sermons/2021"
     values:
