@@ -20,6 +20,11 @@ defaults:
       path: "sermons/2022"
     values:
       year: "2022"
+  
+  - scope:
+      path: "sermons/2023"
+    values:
+      year: "2023"
 
   - scope:
       path: "sermons/2020/sunday"
@@ -33,6 +38,11 @@ defaults:
 
   - scope:
       path: "sermons/2022"
+    values:
+      layout: "sermon"
+  
+  - scope:
+      path: "sermons/2023"
     values:
       layout: "sermon"
 
