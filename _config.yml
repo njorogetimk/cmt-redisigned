@@ -1,4 +1,4 @@
-# baseurl: "/cmt-redisigned"
+baseurl: "/cmt-redisigned"
 defaults:
   - scope:
       path: "sermons"
@@ -20,7 +20,7 @@ defaults:
       path: "sermons/2022"
     values:
       year: "2022"
-  
+
   - scope:
       path: "sermons/2023"
     values:
@@ -40,7 +40,7 @@ defaults:
       path: "sermons/2022"
     values:
       layout: "sermon"
-  
+
   - scope:
       path: "sermons/2023"
     values:
