@@ -1,4 +1,4 @@
-baseurl: "/cmt-redisigned"
+# baseurl: "/cmt-redisigned"
 defaults:
   - scope:
       path: "sermons"
