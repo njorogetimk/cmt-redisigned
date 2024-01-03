@@ -1,10 +1,12 @@
-baseurl: "/cmt-redisigned"
+# baseurl: "/cmt-redisigned"
 defaults:
   - scope:
       path: "sermons"
     values:
       layout: "sermons"
       node: "Sermons"
+
+      # ADD YEAR
 
   - scope:
       path: "sermons/2020"
@@ -27,6 +29,12 @@ defaults:
       year: "2023"
 
   - scope:
+      path: "sermons/2024"
+    values:
+      year: "2024"
+
+  # YEAR LAYOUT
+  - scope:
       path: "sermons/2020/sunday"
     values:
       layout: "sermon"
@@ -43,6 +51,11 @@ defaults:
 
   - scope:
       path: "sermons/2023"
+    values:
+      layout: "sermon"
+
+  - scope:
+      path: "sermons/2024"
     values:
       layout: "sermon"
 
