@@ -4,10 +4,10 @@ title: Sermons
 
 <section class="section content">
   <div class="container">
-    <h2 class="center">2024</h2>
+    <h2 class="center">2025</h2>
     <div class="row">
       {% assign the_counter = 1%} {% assign current_month = ' '%} {%- for
-      article in site.pages reversed-%} {%- if article.year == '2024' and
+      article in site.pages reversed-%} {%- if article.year == '2025' and
       article.name != 'index.html'-%} {% assign art_month = article.date | date:
       "%B"%} {%- if art_month != current_month -%}
       <hr class="col s12" />
@@ -17,9 +17,7 @@ title: Sermons
       {% assign the_counter = 1%} {% assign current_month = art_month%} {%-
       endif -%}
       <div class="col s12 m6 sermon">
-        <a href="{{site.baseurl}}{{article.url}}" class="dark-link"
-          >{{article.heading | replace: "'", ""}}</a
-        >
+        <a href="{{site.baseurl}}{{article.url}}" class="dark-link">{{article.heading | replace: "'", ""}}</a>
         <p>{{article.date | date: "%A %d"}}</p>
       </div>
       {% assign the_modulus = the_counter | modulo: 2%} {%- if the_modulus == 0
